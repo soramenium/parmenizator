@@ -3,3 +3,5 @@ if ./modules/is_os_supported.sh; then
 else
     echo "Niewspierany system"
 fi
+
+#test
