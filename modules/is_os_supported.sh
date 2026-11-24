@@ -10,5 +10,6 @@ is_os_supported() {
             ;;
     esac
 }
+#file refresh bo chmod
 
 is_os_supported

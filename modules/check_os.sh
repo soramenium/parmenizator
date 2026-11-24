@@ -17,5 +17,5 @@ check_os() {
             ;;
     esac
 }
-
+#file refresh bo chmod
 check_os
