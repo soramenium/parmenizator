@@ -1,6 +1,6 @@
-	wget https://github.com/soramenium/debset/archive/refs/heads/main.zip
+	wget https://github.com/soramenium/parmenizator/archive/refs/heads/main.zip
 	unzip main.zip
-	chmod +x ./debset-main/debset.sh
+	chmod +x ./debset-main/automat.sh
 
 # 1. Założenia projektu:
 Pakiet składa się z wrappera i modułów.
