@@ -29,8 +29,13 @@ echo "##########################################################################
 echo "################################################################################";
 echo "                            ";
 
+###
+### WSTAWIĆ ASCII ART SERA (propsy dla Damiana <3
+###
+
 if "$MODULES_DIR/is_os_supported.sh"; then
     "$MODULES_DIR/check_os.sh"
 else
     echo "Niewspierany system"
 fi
+
