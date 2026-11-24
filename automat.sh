@@ -1,5 +1,5 @@
-if ./modules/is_os_supported; then
-    ./modules/check_os
+if ./modules/is_os_supported.sh; then
+    ./modules/check_os.sh
 else
     echo "Niewspierany system"
 fi
