@@ -1,9 +1,9 @@
 #!/bin/bash
 installer(){
-    if $OS_TYPE == "debian"; then
+    if [ "$OS_TYPE" == "debian" ]; then
         echo "Instalacja na Debianie"
         # Tutaj dodaj polecenia instalacyjne dla Debiana
-    elif $OS_TYPE == "fedora"; then
+    elif [ "$OS_TYPE" == "fedora" ]; then
         echo "Instalacja na Fedorze"
         # Tutaj dodaj polecenia instalacyjne dla Fedory
     else
