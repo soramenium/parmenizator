@@ -3,6 +3,9 @@
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 MODULES_DIR="$SCRIPT_DIR/modules"
 
+source "$MODULES_DIR/is_os_supported.sh"
+source "$MODULES_DIR/check_os.sh"
+source "$MODULES_DIR/installer.sh"
 
 echo "                                                                                ";
 echo "################################################################################";
@@ -16,28 +19,15 @@ echo "#     ▀██▀  ▄▀█▄██▄█▀  ▄██ ██ ▀█�
 echo "#                                                                              #";
 echo "#                                                                              #";
 echo "################################################################################";
-echo "                                                                                ";
-echo "┌─┐┬ ┬┌┬┐┌─┐┬─┐┌─┐┌┬┐┬ ┬┌─┐                                                     ";
-echo "├─┤│ │ │ │ │├┬┘└─┐ │ │││├─┤                                                     ";
-echo "┴ ┴└─┘ ┴ └─┘┴└─└─┘ ┴ └┴┘┴ ┴                                                     ";
-echo "        ┌─┐┌─┐┬─┐┌─┐┌┬┐┌─┐┌┐┌┬┬ ┬┌┬┐                                            ";
-echo "        └─┐│ │├┬┘├─┤│││├┤ │││││ ││││                                            ";
-echo "        └─┘└─┘┴└─┴ ┴┴ ┴└─┘┘└┘┴└─┘┴ ┴                                            ";
-echo "                A.K.A Kacper Marczewski ;)                                      ";
-echo "                                                                                ";
-echo "################################################################################";
-echo "################################################################################";
+echo "$                                                                              $";
+echo "$  ┌─┐┬ ┬┌┬┐┌─┐┬─┐┌─┐┌┬┐┬ ┬┌─┐         ┌─┐┌─┐┬─┐┌─┐┌┬┐┌─┐┌┐┌┬┬ ┬┌┬┐            $";
+echo "$  ├─┤│ │ │ │ │├┬┘└─┐ │ │││├─┤         └─┐│ │├┬┘├─┤│││├┤ │││││ ││││            $";
+echo "$  ┴ ┴└─┘ ┴ └─┘┴└─└─┘ ┴ └┴┘┴ ┴         └─┘└─┘┴└─┴ ┴┴ ┴└─┘┘└┘┴└─┘┴ ┴            $";
+echo "$               A.K.A Kacper Marczewski ;)                                     $";
+echo "$                                                                              $";
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
 echo "                                                                                ";
 
-source "$MODULES_DIR/is_os_supported.sh"
-source "$MODULES_DIR/check_os.sh"
 
-
-source /etc/os-release
-
-if check_os; then
-    echo "automat wejszł w prawdę ifa"
-    echo "wykryto $OS_TYPE"
-else
-    echo "Niewspierany system"
-fi
+check_os
+installer

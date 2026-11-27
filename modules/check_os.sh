@@ -11,11 +11,10 @@ check_os() {
         debian:13|fedora:45)
             echo "Supported: $PRETTY_NAME"
             OS_TYPE="$ID"
-            return true
             ;;
         *)
             echo "ERROR: Nieobsługiwany system: $PRETTY_NAME"
-            return false
+            exit 1
             ;;
     esac
 }
