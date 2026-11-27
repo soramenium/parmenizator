@@ -9,7 +9,7 @@ Wrapper odpowiada za przyśpieszone wykonanie wszystkich modułów. Jeśli modu�
 # 2. Przewidziana funkcjonalność:
 - [x] rozpoznanie systemu (debian 13.4, fedora, other)
 	- jeśli inny niż dwa pierwsze to wychodzi ze skryptu z informacją, że nie ten system nie ma wsparcia
-- [ ] Instalacja pakietów
+- [x] Instalacja pakietów
 	- odpowiedni dobór pakietów zależnie od systemu
 - [ ] Konfiguracja GRUB
 	- ustawi naszą tapetę jako tło gruba

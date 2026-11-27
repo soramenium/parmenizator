@@ -4,11 +4,12 @@ if [[ ! -f /etc/os-release ]]; then
     exit 1
 fi
 
+echo "odczytuję informacje o systemie operacyjnym z /etc/os-release..."
 source /etc/os-release
 
 case "$ID:$VERSION_ID" in
     debian:13|fedora:45)
-        echo "Supported: $PRETTY_NAME"
+        echo "Wykryto obsługiwany system: $PRETTY_NAME"
         OS_TYPE="$ID"
         ;;
     *)
