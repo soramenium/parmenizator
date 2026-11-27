@@ -3,8 +3,6 @@
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 MODULES_DIR="$SCRIPT_DIR/modules"
 
-source "$MODULES_DIR/check_os.sh"
-source "$MODULES_DIR/installer.sh"
 
 echo "                                                                                ";
 echo "################################################################################";
@@ -28,5 +26,5 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo "                                                                                ";
 
 
-check_os  
-installer
+source "$MODULES_DIR/check_os.sh"
+source "$MODULES_DIR/installer.sh"
