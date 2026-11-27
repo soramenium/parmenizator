@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "wewmątrez installera $OS_TYPE"
+
 if [ "$OS_TYPE" == "debian" ]; then
     echo "Instalacja na Debianie"
     mapfile -t PACKAGES < pakiety_debian.txt
