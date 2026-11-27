@@ -10,7 +10,6 @@ case "$ID:$VERSION_ID" in
     debian:13|fedora:45)
         echo "Supported: $PRETTY_NAME"
         OS_TYPE="$ID"
-        echo "checkos mówi $OS_TYPE"
         ;;
     *)
         echo "ERROR: Nieobsługiwany system: $PRETTY_NAME"

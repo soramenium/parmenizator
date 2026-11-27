@@ -28,10 +28,5 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo "                                                                                ";
 
 
-check_os
-echo "tu już po checkos ${OS_TYPE}"
-if [ $OS_TYPE ] then    
-    installer
-elif
-    echo "brak wartości zmiennej kurwaaaaaa"
-fi
+check_os  
+installer

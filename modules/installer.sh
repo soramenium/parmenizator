@@ -1,15 +1,13 @@
 #!/bin/bash
 
-echo "wewmątrez installera $OS_TYPE"
-
 if [ "$OS_TYPE" == "debian" ]; then
     echo "Instalacja na Debianie"
-    mapfile -t PACKAGES < pakiety_debian.txt
+    mapfile -t PACKAGES < $SCRIPT_DIR/pakiety_debian.txt
     sudo apt update && sudo apt install -y $PACKAGES
 
 elif [ "$OS_TYPE" == "fedora" ]; then
     echo "Instalacja na Fedorze"
-    mapfile -t PACKAGES < pakiety_fedora.txt
+    mapfile -t PACKAGES < $SCRIPT_DIR/pakiety_fedora.txt
     sudo dnf update && sudo dnf install -y $PACKAGES
 
 else
