@@ -29,4 +29,8 @@ echo "                                                                          
 
 
 check_os
-installer
+if [ $OS_TYPE ] then
+    installer
+elif
+    echo "brak wartości zmiennej kurwaaaaaa"
+fi
